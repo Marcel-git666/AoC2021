@@ -30,9 +30,11 @@ enum Day07 {
         
         var avg = 0.0
         var sum = 0
+        /*
         for number in numbers {
             sum += number
-        }
+        }*/
+        sum = numbers.reduce(0,+)
         avg = (Double(sum) / Double(numbers.count))
         
         print("Avg je \(avg)")
